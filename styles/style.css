@@ -1,0 +1,452 @@
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: wheat;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/***********
+    HOME
+***********/
+
+.home {
+    background-image: url(../images/bg-home.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+
+}
+
+.home .header .nav ul li .logo {
+    margin: 0px 50px;
+    padding: 0 10px;
+}
+
+/****************
+  HOME - BANNER
+*****************/
+
+.banner {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 260px;
+    margin-top: -120px;
+    margin-left: -375px;
+}
+
+.banner h1 {
+    font-size: 120px;
+}
+
+.banner .slogan1 {
+    color: var(--color-primary);
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.banner .slogan2 {
+    color: var(--color-primary);
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/********************
+    ABOUT - HORARIO
+*********************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .time {
+    width: 33%;
+    padding: 20px;
+    background: url(../images/brush-big.jpg);
+    position: relative;
+    top: -50px;
+}
+
+.about .time .overlay {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+}
+
+.about .time .overlay .img {
+    width: 50px;
+}
+
+.about .time .overlay h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    border-bottom: #917758 2px solid;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .time .text {
+    margin: 10px 0;
+}
+
+.about .time .text:after {
+    content: '•';
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.about .time .matriz:after {
+    content: '|';
+    display: block;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.about .time .text h4 {
+    color: rgb(206, 205, 205);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .time span {
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+}
+
+.about .time .img2 {
+    width: 15px;
+}
+
+.about .time .img3 {
+    width: 20px;
+}
+
+/***********************
+    ABOUT - EXPERIENCIA
+************************/
+
+.about .experience {
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 9%;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin: 20px 0;
+    background-color: #a38f78;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+/************
+    SERVICOS
+************/
+
+.services {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+.services .boxes {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .boxes .box {
+    padding: 60px;
+    margin: 50px;
+    border: 3px solid var(--color-primary);
+}
+
+.services .boxes .box h3 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.services .boxes .box p {
+    margin-top: 25px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+/***************
+    AGENDAMENTO
+***************/
+
+.appointment {
+    padding: 100px 80px;
+    color: var(--color-primary-light);
+    height: 100vh;
+    background-color: var(--color-primary);
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.appointment h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.appointment img {
+    margin: 0 auto;
+    display: block;
+}
+
+.appointment form {
+    margin: 80px 30px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    font-size: 14px;
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.453) 2px 2px 6px;
+}
+
+.appointment textarea {
+    height: 150px;
+}
+
+.appointment button{
+    cursor: pointer;
+    color: var(--color-primary-light);
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.453) 2px 2px 6px;
+}
+
+.appointment button:hover{
+    background-color: rgb(27, 15, 8);
+}
+
+/***************
+    GALLERY
+***************/
+
+.gallery {
+  padding: 100px 0;
+  background-color: var(--color-primary-light);
+}
+
+.gallery h1 {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery .gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 100vh;
+  margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+  border: 10px solid var(--color-primary);
+  margin: 6px;
+  width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+  width: 100%;
+}
+
+/***************
+    LOCATION
+***************/
+
+.location{
+    padding: 100px 0;
+    background: url(../images/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.location .head .info .text span{
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child{
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map{
+    width: 100%;
+}
+
+.location .map iframe{
+    width: 100%;
+}
+
+/***************
+    FOOTER
+***************/
+
+.footer{
+    background-color: #191919;
+    color: var(--color-primary-light);
+    text-align: center;
+    padding: 20px;
+}
